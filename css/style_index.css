@@ -20,6 +20,11 @@ body {
     box-sizing: border-box;
     overflow: hidden;
 }
+.bg img {
+    width: 1920px;
+    height: 1080px;
+    object-fit:cover;
+}
 @keyframes content {
     0% {top:-100px; opacity: 0.1;}
     100% {top: 0; opacity: 1;}
