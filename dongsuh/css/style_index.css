@@ -19,7 +19,7 @@ body {
 #wrap {
   width: 100%;
   max-width: 1920px;
-  height: 3445px;
+  height: 3588px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -195,7 +195,7 @@ article {
   position: relative;
   max-width: 1920px;
   height: 360px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .article_wrap {
   width: 1280px;
@@ -377,9 +377,10 @@ ul.sir2 li.on {
 
 .contents {
   width: 100%;
-  height: 300px;
+  height: 400px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .banner {
   position: relative;
@@ -393,24 +394,28 @@ ul.sir2 li.on {
   position: absolute;
   width: 100%;
 }
+.banner ul li {
+  border: 1px solid #fff;
+}
 
 .youtube {
-  margin-top: 100px;
+  margin: 150px 0;
   position: relative;
   width: 100%;
   height: 620px;
   background: #f3f3f3;
   overflow: hidden;
+
 }
 .youtube .title {
   position: absolute;
   font-size: 35px;
   font-family: "Noto Sans KR";
   font-weight: 700;
-  color: #111;
-  margin: 20px;
+  color: #2e2e2e;
+  margin: 10px 20px;
   padding: 10px;
-  left: 15%;
+  left: 45%;
 }
 .youtube i {
   position: absolute;
@@ -427,32 +432,39 @@ ul.sir2 li.on {
 }
 .youtube .mp4 {
   position: absolute;
+  top: 15%;
+  left: -520px;
+
+
+}
+/* .youtube .mp4 {
+  position: absolute;
   display: flex;
   left: 28%;
   top: 12%;
   margin-top: 10px;
-}
+} */
 .youtube ul {
   display: flex;
 }
 .youtube ul li {
   position: relative;
-margin-right: 200px;
+  margin-right: 250px;
 }
 li.mp4_0 img {
     left: 0;
 }
 li.mp4_1 img{
-    left: 200px; 
+    left: 250px; 
 }
 li.mp4_2 img{
-    left: 400px; 
+    left: 750px; 
 }
 li.mp4_3 img{
-    left: 600px;
+    left: 1000px;
 }
 li.mp4_4 img{
-    left: 800px; 
+    left:1250px; 
 }
 
 footer {
