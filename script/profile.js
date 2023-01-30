@@ -56,7 +56,7 @@ $(function () {
         let scr = $(this).scrollTop();
         console.log(scr);
         if (scr >= 1500) {
-            $(".txt").css({position: "relative", top: "15%", opacity: "1"});
+            $(".txt").css({position: "relative", top: "200px", opacity: "1"});
         } 
         else {
           $(".txt").css({position: "relative", top: "-10px", opacity: "0"});
