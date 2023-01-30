@@ -94,8 +94,8 @@ h1 {
     font-weight: bold;
 }
 .profile_list img {
-    width: 370px;
-    height: 400px;
+    width: 270px;
+    height: 300px;
     margin-left: 20px;
     margin-top: 20px;
 }
@@ -103,15 +103,13 @@ h1 {
     position: absolute;
     width: 100%;
     right: 0%;
-    top: 80px;
+    top: 55px;
     line-height: 50px;
     /* padding-left: 10px; */
 }
 .profile_txt li {
     text-align: right;
     padding-right: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 .profile_txt li:first-child {
     margin-bottom: 20px;
@@ -121,7 +119,7 @@ h1 {
     font-family: 'NanumSquareExtraBold';
 }
 .profile_txt2 {
-    margin-top: 5px;
+    margin-top: 50px;
     padding-left: 30px;
 }
 .profile_txt2 li a {
@@ -389,7 +387,7 @@ svg text {
     text-align: center;
 }
 .twosome_txt:hover{
-    background-color:rgb(255, 66, 132);    
+    background-color:rgb(255, 122, 169);    
 }
 .twosome_txt.on {
     background-color:rgb(255, 66, 132);      
@@ -408,13 +406,13 @@ svg text {
     background-color:#fc6767;
 }
 .kakao_txt:hover{
-    background-color:rgb(255, 208, 0);
+    background-color:rgb(240, 203, 38);
 }
 .kakao_txt.on{
     background-color:rgb(255, 208, 0);
 }
 .kakao_txt{
-    background-color: rgb(220, 172, 50);
+    background-color: rgb(243, 192, 63);
     cursor: pointer;
 }
 .kakao_txt li:first-child {
@@ -445,7 +443,7 @@ svg text {
 }
 .brand_txt{
     cursor: pointer;
-   padding-top: 50px;
+    padding-top: 50px;
 }
 .brand_txt img {
     width: 300px;
@@ -465,24 +463,26 @@ svg text {
     width: 50%;
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #eee;
     border: 1px solid #eee;
 }
 .btn li a {
     font-size: 17px;
 }
-
-.btn li:hover {
-    opacity: 0.8;
+.btn1 li {
+    background-color:rgb(253, 147, 184);
+}
+.btn1 li:hover {
+    background-color:  rgb(251, 179, 204);
 }
 .btn1 li:first-child {
-    border-left: 1px solid #333;
+    /* border-left: 1px solid #333; */
     border-top: none;
     border-bottom: none;
-
+    border-left: none;
 }
 .btn1 li:last-child {
-    border-right: 1px solid #eee;
+    border-right: none;
     border-left:none;
     border-top: none;
     border-bottom: none;
@@ -491,16 +491,23 @@ svg text {
     border-left: none;
     border-top: none;
     border-bottom: none;
-    border-right: 1px solid #333;
+    border-right: none;
+    /* border-right: 1px solid #333; */
 }
 .btn2 li:last-child  {
     border-left: 1px solid #eee;
     border-top: none;
     border-bottom: none;
-    border-right: 1px solid #eee;
+    border-right: none;
+}
+.btn2 li {
+    background-color:#fd7575;
+}
+.btn2 li:hover {
+    background-color: rgb(255, 149, 149);
 }
 .btn3 li:first-child {
-    border-left: 1px solid #333;
+    border-left: none;
     border-top: none;
     border-bottom: none;
     border-right: none;
@@ -509,6 +516,13 @@ svg text {
     border-left: 1px solid #eee;
     border-top: none;
     border-bottom: none;
+    border-right: none;
+}
+.btn3 li {
+    background-color: rgb(247, 216, 78);;
+}
+.btn3 li:hover {
+    background-color: rgb(220, 175, 59);
 }
 .art {
     position: relative;
