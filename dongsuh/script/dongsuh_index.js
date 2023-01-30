@@ -123,7 +123,7 @@ $(function () {
 //youtube 
 $(function () {
   function nextmp() {
-    $(".mp4_ul").animate({ left: "-200px" }, 500, function () {
+    $(".mp4_ul").animate({ left: "-250px" }, 500, function () {
       $(".mp4_ul li").eq(0).appendTo(".mp4_ul");
       $(".mp4_ul").stop(500);
 
@@ -132,7 +132,7 @@ $(function () {
   }
   function prevmp() {
     $(".mp4_ul li").eq(4).prependTo(".mp4_ul");
-    $(".mp4_ul").css({left: "200px" });
+    $(".mp4_ul").css({left: "250px" });
     $(".mp4_ul").animate({left:"0" }, 500);
   }
   $(".fa-caret-left").click(function () {
