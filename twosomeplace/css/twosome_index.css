@@ -194,7 +194,8 @@ ul.mainb li img {
   max-width: 1920px;
   height: 300px;
   display: flex;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   box-sizing: border-box;
 }
 .event {
@@ -309,10 +310,10 @@ ul.mainb li img {
 
 #phone {
   display: flex;
- width: 100%;
+  width: 100%;
   max-width: 1920px;
   height: 382px;
-  margin-top: 30px;
+  margin: 100px 0;
 }
 .app {
   display: flex;
@@ -391,8 +392,7 @@ ul.mainb li img {
 article {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 100px 0;
 }
 .notice {
   position: relative;
