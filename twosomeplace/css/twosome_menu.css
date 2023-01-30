@@ -192,19 +192,19 @@ section {
   animation: right 1s infinite;
 }
 .menu_1:hover {
-  background-image: url(images/coffeemenubg.png);
+  background-image: url(../images/coffeemenubg.png);
   transition: 0.8s ease-out;
 }
 .menu_2:hover {
-  background-image: url(images/menu_bg_dessert_light.png);
+  background-image: url(../images/menu_bg_dessert_light.png);
   transition: 0.8s ease-out;
 }
 .menu_3:hover {
-  background-image: url(images/menu_bg_deli3.png);
+  background-image: url(../images/menu_bg_deli3.png);
   transition: 0.8s ease-out;
 }
 .menu_4:hover {
-  background-image: url(images/menu_bg_md5.png);
+  background-image: url(../images/menu_bg_md5.png);
   transition: 0.8s ease-out;
 }
 .menu:hover h1{
