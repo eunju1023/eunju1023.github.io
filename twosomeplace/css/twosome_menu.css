@@ -167,19 +167,19 @@ section {
 .menu_1 {
     margin-top: 50px;
     /* position: relative; */
-    background: url(images/coffee_menubg.png);
+    background: url(../images/coffee_menubg.png);
 }
 .menu_2 {
     /* background: url(../images/dessert_menubg.png); */
-    background: url(images/menu_bg_dessert_op.png);
+    background: url(../images/menu_bg_dessert_op.png);
 }
 .menu_3 {
     /* background: url(../images/menu_deli_bg.png); */
-    background: url(images/menu_bg_deli3_op.png);
+    background: url(../images/menu_bg_deli3_op.png);
 }
 .menu_4 {
     /* background: url(../images/md_menu_bg.png); */
-    background: url(images/menu_bg_md5_op.png);
+    background: url(../images/menu_bg_md5_op.png);
 }
 .menu i {
   position: relative;
