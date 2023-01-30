@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="css/style_index.css" />
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
     <link
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css"
       rel="stylesheet"
@@ -22,91 +24,184 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/favicon_ej.ico">
+    <script src="script/profile.js"></script>
+
 </head>
 <body>
     <div id="wrap">
-      <div class="bg">
-        <ul>
+      <div class="bg" id="main_menu">
+        <ul class="main">
             <li><video autoplay loop muted>
               <source
                 src="images/main.mp4"
                 type="video/mp4"
-                style="max-width: 100%"
+                style="width: 100%"
               /></video>
           </li>
         </ul>
+        <ul class="menu">
+          <li><a href="#main_menu">HOME</a></li>
+          <li><a href="#profile_menu">PROFILE</a></li>
+          <li><a href="#web_menu">WEB</a></li>
+          <li><a href="#art_menu">ART</a></li>
+          <li><a href="#video_menu">VIDEO</a></li>
+        </ul>
       </div>
-      <div class="content">
-        <div class="portfolio">
-          <ul class="twosome">
-            <li><img src="images/twosome_pc.png" alt="twosome"></li>
-          </ul>
-          <ul class="dongsuh">
-            <li><img src="images/donsuh_com.png" alt="dongsuh"></li>
-          </ul>
-          <ul class="kakao">
-            <li><img src="images/kakao_com.png" alt="kakao"></li>
-          </ul>
+
+      <div class="profile" id="profile_menu">
+        <ul>
+          <li><a href="#"><h1>PROFILE</h1></a></li>
+        </ul>
+        <ul class="profile_list">
+          <li><a href="#"><img src="images/cubic_css1.jpg" alt="profile"></a></li>
+              <ul class="profile_txt">
+                <li><a href="#"><b>박은주</b></a></li>
+                <li><a href="#">tel. 010-0000-0000</a></li>
+                <li><a href="#">E-mail. 0000@naver.com</a></li>
+                <li><a href="#">00대학교 00학과 졸업</a></li>
+              </ul>
+              <ul class="profile_txt2">
+                <li><a href="#">이력 <br> -대전시청자미디어센터 인턴 경력 <br>
+                                        -IT융합영상콘텐츠 (1인 미디어 콘텐츠 크리에이터 전문가 양성과정) 이수<br>
+                                        -UI/UX반응형 웹디자인 웹퍼블리셔(코딩) 개발자 과정 이수</a></li>
+              </ul>
+        </ul>
+   
+       <div class="skill_graph_wrap">
+         <div class="skill_graph">
+            <ul class="skill_title">
+              <li><a href="#"></a><h2> #SKILL</h2></li><a href="#"></a>
+            </ul>
+            <ul class="bar bar1">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JS</a></li>
+            </ul>
+            <ul class="bar bar2">
+              <li><a href="#">90%</a></li>
+              <li><a href="#">90%</a></li>
+              <li><a href="#">70%</a></li>
+            </ul>
+            <ul class="circle_graph">
+              <li class="photoshop">
+                <svg width="170" height="170">
+                  <circle cx="70" cy="70" r="60" stroke="#001e36" stroke-width="12" fill="#31a8ff" />
+                <text x="22" y="-70" fill="#000">PHOTOSHOP 
+                <tspan x="55"  y="-50" fill="#000">90%</tspan></text>
+                </svg>
+              </li>
+              <li class="illust">
+                <svg width="170" height="170">
+                  <circle cx="70" cy="70" r="60" stroke="#330000" stroke-width="12" fill="#ff9a00" />
+                <text x="20" y="-70" fill="#000">ILLUSTRATOR
+                <tspan x="55"  y="-50" fill="#000">80%</tspan></text>
+                </svg>
+              </li>
+              <li class="pre">
+                <svg width="170" height="170">
+                  <circle cx="70" cy="70" r="60" stroke="#00005b" stroke-width="12" fill="#9999ff" />
+                <text x="32" y="-70" fill="#000">PREMIERE
+                <tspan x="55"  y="-50" fill="#000">85%</tspan></text>
+                </svg>
+              </li>
+              <li class="after">
+                <svg width="170" height="170">
+                  <circle cx="70" cy="70" r="60" stroke="#00005b" stroke-width="12" fill="#9999ff" />
+                <text x="25" y="-70" fill="#000">After Effects
+                <tspan x="55"  y="-50" fill="#000">75%</tspan></text>
+                </svg>
+              </li>
+            </ul>
+            <ul class="official_skill">
+              <li class="Certificates"><h2> #Certificates</h2></li>
+                <ul class="skill_list">
+                  <li><a href="#">- GTQ 그래픽기술자격 2급 (2016.12.16 / 보유)</a></li><br>
+                  <li><a href="#">• ACA Photoshop CC 2015 (2019.06 ~ 2022.06 / 만료)</a></li>
+                  <li><a href="#">• ACA illustrator CC 2015 (2019.06 ~ 2022.06  / 만료)</a></li>
+                  <li><a href="#">• ACA premiere CC 2015 (2019.07 ~ 2022.07  / 만료)</a></li>
+                </ul>
+                <!-- <ul class="skill_list2">
+                  <li><a href="#">- MOS Master 2010 (PowerPoint, Excel, Word, Access / 보유)</a></li><br>
+                </ul> -->
+            </ul>
+         </div>
         </div>
+       </div>
+      <div class="content" id="web_menu">
+        <h1>WEB</h1>
 
         <div class="txt">
-          <ul class="twosome_txt">
-            <li><a href="#"><h2>투썸플레이스</h2></a> </li>
-            <li class="sub sub1"><a href="#">프로젝트명: A TWOSOME PLACE<br>
-              작업기간 : 2주<br>
-              기여도 : 개인작업 100%<br>
-              구성목록 : Main Page + Sub Page 1<br>
-              사용프로그램 : <br>Figma / Photoshop /  HTML5 / CSS / JS</a></li>
-          </ul>
-          <ul class="dongsuh_txt">
-            <li><a href="#"><h2>동서식품</h2></a></li>
-            <li class="sub sub2"><a href="#">프로젝트명: 동서식품<br>
-              작업기간 : 2주<br>
-              기여도 : 개인작업 100%<br>
-              구성목록 : Main Page + Sub Page 1<br>
-              사용프로그램 : <br>Figma / Photoshop /  HTML5 / CSS / JS</a></li>
-          </ul>
-          <ul class="kakao_txt">
-            <li><a href="#"><h2>카카오톡</h2></a></li>
-            <li class="sub sub3"><a href="#">프로젝트명: 카카오톡 다운로드 페이지<br>
-              작업기간 : 1일<br>
-              기여도 : 개인작업 100%<br>
-              구성목록 : Main Page<br>
-              사용프로그램 :  HTML5 / CSS / JS</a></li>
-          </ul>
-        </div>
-        <div class="btn btn_1">
-          <ul class="btn1">
-            <li><a href="https://www.figma.com/file/ClKLQiwjhMGLq1Q2rgs5iN/Untitled?node-id=0%3A1&t=tdNvDAw9LqJlJMTJ-0">FIGMA
-              PROTOTYPE</a></li>
-          </ul>
-          <ul class="btn2">
-            <li><a href="twosomeplace/index.html">REDESIGN
-              SITE</a></li>
-          </ul>
-        </div>
-        <div class="btn btn_2">
-          <ul class="btn1">
-            <li><a href="https://www.figma.com/file/q3oxSzNFDA5LHGbY4YjZIs/Untitled?node-id=0%3A1&t=IkymRntHijgm3WLf-0">FIGMA
-              PROTOTYPE</a></li>
-          </ul>
-          <ul class="btn2">
-            <li><a href="dongsuh/index.html">REDESIGN
-              SITE</a></li>
-          </ul>
-        </div>
-        <div class="btn btn_3">
-          <ul class="btn1">
-            <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk">KAKAOTALK</a></li>
-          </ul>
-          <ul class="btn2">
-            <li><a href="kakao/index.html">REDESIGN
-              SITE</a></li>
+            <ul class="brand_txt twosome_txt">
+              <li><img src="images/twosome_pc.png" alt="twosome"></li>
+              <li><a href="#"><h2>투썸플레이스</h2></a> </li>
+              <li class="sub sub1"><a href="#">프로젝트명: A TWOSOME PLACE<br>
+                작업기간 : 2주<br>
+                기여도 : 개인작업 100%<br>
+                구성목록 : Main Page + Sub Page 2<br>
+                사용프로그램 : <br>Figma / Photoshop /  HTML5 / CSS / JS</a></li>
+                <ul class="btn btn1">
+                  <li><a href="https://www.figma.com/file/ClKLQiwjhMGLq1Q2rgs5iN/Untitled?node-id=0%3A1&t=tdNvDAw9LqJlJMTJ-0" target="new">FIGMA
+                    PROTOTYPE</a></li>
+                    <li><a href="twosomeplace/index.html" target="new">REDESIGN SITE</a></li>
+                </ul>
+            </ul>
+            <ul class="brand_txt dongsuh_txt">
+              <li><img src="images/donsuh_com.png" alt="dongsuh"></li>
+              <li><a href="#"><h2>동서식품</h2></a></li>
+              <li class="sub sub2"><a href="#">프로젝트명: 동서식품<br>
+                작업기간 : 2주<br>
+                기여도 : 개인작업 100%<br>
+                구성목록 : Main Page + Sub Page 1<br>
+                사용프로그램 : <br>Figma / Photoshop /  HTML5 / CSS / JS</a></li>
+                <ul class="btn btn2">
+                  <li><a href="https://www.figma.com/file/q3oxSzNFDA5LHGbY4YjZIs/Untitled?node-id=0%3A1&t=IkymRntHijgm3WLf-0" target="new">FIGMA
+                    PROTOTYPE</a></li>
+                  <li><a href="dongsuh/index.html" target="new">REDESIGN SITE</a></li>
+                </ul>
+            </ul>
+            <ul class="brand_txt kakao_txt">
+              <li><img src="images/kakao_com.png" alt="kakao"></li>
+              <li><a href="#"><h2>카카오톡</h2></a></li>
+              <li class="sub sub3"><a href="#">프로젝트명: 카카오톡 다운로드 페이지<br>
+                작업기간 : 1일<br>
+                기여도 : 개인작업 100%<br>
+                구성목록 : Main Page 1<br>
+                사용프로그램 : <br> HTML5 / CSS / JS</a></li>
+                <ul class="btn btn3">
+                  <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="new">KAKAOTALK</a></li>
+                  <li><a href="kakao/index.html" target="new">REDESIGN SITE</a></li>
+                </ul>
+            </ul>
+          </div>
+      </div>
+
+      <div class="art" id="art_menu">
+        <div class="art_part">
+          <ul>
+            <li><a href="#"><h1>ART</h1></a></li>
+              <ul class="art_img">
+                <img src="images/cubic_css1.jpg" alt="css1">
+                <img src="images/cubic_css4.jpg" alt="css4">
+                <img src="images/cubic_css5.jpg" alt="css5">
+                <img src="images/cubic_css3.jpg" alt="css3">
+                <img src="images/cubic_css6.jpg" alt="css6">
+                <img src="images/cubic_css2.jpg" alt="css2">
+              </ul>
           </ul>
         </div>
       </div>
     </div>
-   
-    
+
+      <div class="video" id="video_menu">
+        <div class="video_part">
+          <ul>
+            <li><a href="#"><h1>VIDEO</h1></a></li>
+          </ul>
+        </div>
+      </div>
 </body>
 </html>
